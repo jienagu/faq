@@ -17,7 +17,7 @@ faq <- function(data, width = NULL, height = NULL, elementId = NULL,
   # forward options using x
   x = list(
     data = htmlwidgets:::toJSON(data),
-    title = title
+    faqtitle = title
   )
 
   # create widget

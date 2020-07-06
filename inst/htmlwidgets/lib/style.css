@@ -1,4 +1,4 @@
-.collapsible {
+.faqcollapsible {
   background-color: #F0F0F0;
   color: black;
   cursor: pointer;
@@ -13,7 +13,7 @@
 }
 
 
-.active, .collapsible:hover {
+.active, .faqcollapsible:hover {
   background-color: #E8E8E8;
 }
 
@@ -22,7 +22,7 @@
 }
 
 
-.collapsible:after {
+.faqcollapsible:after {
   content: '\002B';
   font-size: 28px;
   color: black;
@@ -38,7 +38,7 @@
   content: "\2212";
 }
 
-.content {
+.faqcontent {
   padding-left: 80px;
   padding-right:20px;
   max-height: 0;
