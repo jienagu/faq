@@ -33,7 +33,7 @@ faq.appendChild(faqtitle);
 for (var i = 0; i < jsonData.answer.length; i++) {
 
    let wrapperdiv = document.createElement("div");
-       wrapperdiv.classList.add("wrapper");
+       wrapperdiv.classList.add("faqwrapper");
    let contentdiv = document.createElement("div");
     contentdiv.classList.add("faqcontent");
    let ptag = document.createElement("p");
