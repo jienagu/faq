@@ -30,7 +30,7 @@ df <- data.frame(
              "question2 answer", 
              "answer3")
 )
-faq::faq(data = df, elementId = "faq", title = "Frequently Asked Questions")
+faq::faq(data = df, elementId = "faq", faqtitle = "Frequently Asked Questions")
 ```
 
 <!--html_preserve-->
@@ -39,6 +39,6 @@ faq::faq(data = df, elementId = "faq", title = "Frequently Asked Questions")
 
 </div>
 
-<script type="application/json" data-for="faq">{"x":{"data":{"question":["Question1","Question2","Question3"],"answer":["answer for question1","question2 answer","answer3"]},"title":"Frequently Asked Questions"},"evals":[],"jsHooks":[]}</script>
+<script type="application/json" data-for="faq">{"x":{"data":{"question":["Question1","Question2","Question3"],"answer":["answer for question1","question2 answer","answer3"]},"faqtitle":"Frequently Asked Questions"},"evals":[],"jsHooks":[]}</script>
 
 <!--/html_preserve-->

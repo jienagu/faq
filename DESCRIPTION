@@ -2,11 +2,21 @@ Package: faq
 Title: Create faq page 
 Version: 0.1.0
 Authors@R: 
-    person(given = "Jiena",
+  c(person(given = "Jiena",
            family = "McLellan",
            role = c("aut", "cre"),
            email = "jienagu90@gmail.com",
-           comment = c(ORCID = "YOUR-ORCID-ID"))
+           comment = c(ORCID = "0000-0002-5578-088X")),
+    person(given = "Michael",
+           family = "Condouris",
+           role = "ctb",
+           comment = c(ORCID = "0000-0002-8862-4250")),
+    person(given = "Alex",
+           family = "Lais",
+           role = "ctb"),
+    person(given = "Gunvansh",
+           family = "Khanna",
+           role = "ctb"))
 Description: Create Frequently Asked Questions page for Shiny application.
 Suggests: knitr, rmarkdown
 VignetteBuilder: knitr

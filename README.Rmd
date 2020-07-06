@@ -40,6 +40,6 @@ df <- data.frame(
              "question2 answer", 
              "answer3")
 )
-faq::faq(data = df, elementId = "faq", title = "Frequently Asked Questions")
+faq::faq(data = df, elementId = "faq", faqtitle = "Frequently Asked Questions")
 ```
 
