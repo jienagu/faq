@@ -12,12 +12,12 @@
 #'
 #' @export
 faq <- function(data, width = NULL, height = NULL, elementId = NULL,
-                title = "Frequently Asked Questions") {
+                faqtitle = "Frequently Asked Questions") {
 
   # forward options using x
   x = list(
     data = htmlwidgets:::toJSON(data),
-    faqtitle = title
+    faqtitle = faqtitle
   )
 
   # create widget
@@ -38,7 +38,7 @@ faq <- function(data, width = NULL, height = NULL, elementId = NULL,
 #'
 #' @param outputId output variable to read from
 #' @param width,height Must be a valid CSS unit (like \code{'100\%'},
-#'   \code{'400px'}, \code{'auto'}) or a number, which will be coerced to a
+#'   \code{'100%'}, \code{'auto'}) or a number, which will be coerced to a
 #'   string and have \code{'px'} appended.
 #' @param expr An expression that generates a faq
 #' @param env The environment in which to evaluate \code{expr}.
@@ -48,7 +48,7 @@ faq <- function(data, width = NULL, height = NULL, elementId = NULL,
 #' @name faq-shiny
 #'
 #' @export
-faqOutput <- function(outputId, width = '100%', height = '400px'){
+faqOutput <- function(outputId, width = '100%', height = '100%'){
   htmlwidgets::shinyWidgetOutput(outputId, 'faq', width, height, package = 'faq')
 }
 
