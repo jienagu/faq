@@ -25,7 +25,7 @@ function faq(el, x){
   var jsonData = x.data
 
 var faq = document.getElementById(el.id);
-var faqtitle = document.createElement("H1");
+var faqtitle = document.createElement("H2");
 var titletext = document.createTextNode(x.faqtitle);
 faqtitle.appendChild(titletext);
 faq.appendChild(faqtitle);
