@@ -1,3 +1,8 @@
+.faq-package{
+  padding:20px;
+}
+
+
 .faqcollapsible {
   background-color: #F0F0F0;
   color: black;
@@ -13,7 +18,7 @@
 }
 
 
-.active, .faqcollapsible:hover {
+.faq-package .active, .faqcollapsible:hover {
   background-color: #E8E8E8;
 }
 
@@ -34,7 +39,7 @@
   margin-top: -8px;
 }
 
-.active:after {
+.faq-package .active:after {
   content: "\2212";
 }
 

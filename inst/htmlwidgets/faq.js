@@ -25,6 +25,8 @@ function faq(el, x){
   var jsonData = x.data
 
 var faq = document.getElementById(el.id);
+faq.classList.add("faq-package");
+
 var faqtitle = document.createElement("H2");
 var titletext = document.createTextNode(x.faqtitle);
 faqtitle.appendChild(titletext);
