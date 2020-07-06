@@ -1,0 +1,34 @@
+---
+title: "Introduction to faq"
+author: "Jiena Gu McLellan"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Introduction to faq}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+This is package is to create a FAQ (Frequently Asked Questions) page for Shiny application with desired data.frame. 
+
+## Introduction
+
+Simply create a data frame with `question` column and `answer` column. Then put this data frame into `faq()` function, we will get a nice FAQ page. 
+
+```{r ex1}
+df <- data.frame(
+  question = c("Question1", "Question2", "Question3"),
+  answer = c("answer for question1", 
+             "question2 answer", 
+             "answer3")
+)
+faq(data = df, elementId = "faq", title = "Frequently Asked Questions")
+```
+
