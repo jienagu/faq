@@ -32,6 +32,31 @@ var titletext = document.createTextNode(x.faqtitle);
 faqtitle.appendChild(titletext);
 faq.appendChild(faqtitle);
 
+ let faqallexpand = document.createElement("button");
+    faqallexpand.classList.add("faq-expand-all");
+    faqallexpand.innerHTML = "+ Expand All";
+
+    var allcontent = document.getElementsByClassName("faqcontent");
+    var allcollapsible = document.getElementsByClassName("faqcollapsible");
+    faqallexpand.addEventListener("click", function() {
+      if (faqallexpand.innerHTML === "+ Expand All") {
+              faqallexpand.innerHTML = "- Collapse All";
+            } else {
+             faqallexpand.innerHTML = "+ Expand All";
+            }
+    for (i = 0; i < allcontent.length; i++) {
+      if (faqallexpand.innerHTML === "+ Expand All"){
+        allcontent[i].style.maxHeight = null;
+        allcollapsible[i].classList.remove("active");
+      } else {
+        allcontent[i].style.maxHeight = allcontent[i].scrollHeight + "px";
+        allcollapsible[i].classList.add("active");
+      }
+    }
+  });
+
+faq.appendChild(faqallexpand);
+
 for (var i = 0; i < jsonData.answer.length; i++) {
 
    let wrapperdiv = document.createElement("div");
