@@ -6,9 +6,17 @@
 #' @param width width of this widget
 #' @param height height of this widget
 #' @param elementId ellement ID of this widget
-#' @param title title for this widgets
+#' @param faqtitle title for this widgets
 #'
 #' @import htmlwidgets
+#' @examples
+#' df <- data.frame(
+#' question = c("Question1", "Question2", "Question3"),
+#' answer = c("answer for question1",
+#'            "question2 answer",
+#'            "answer3")
+#' )
+#' faq::faq(data = df, elementId = "faq", faqtitle = "Frequently Asked Questions")
 #'
 #' @export
 faq <- function(data, width = NULL, height = NULL, elementId = NULL,
@@ -37,9 +45,8 @@ faq <- function(data, width = NULL, height = NULL, elementId = NULL,
 #' applications and interactive Rmd documents.
 #'
 #' @param outputId output variable to read from
-#' @param width,height Must be a valid CSS unit (like \code{'100\%'},
-#'   \code{'100%'}, \code{'auto'}) or a number, which will be coerced to a
-#'   string and have \code{'px'} appended.
+#' @param width width of the widget
+#' @param height height of the widget
 #' @param expr An expression that generates a faq
 #' @param env The environment in which to evaluate \code{expr}.
 #' @param quoted Is \code{expr} a quoted expression (with \code{quote()})? This

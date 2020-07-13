@@ -6,16 +6,16 @@
 \alias{renderFaq}
 \title{Shiny bindings for faq}
 \usage{
-faqOutput(outputId, width = "100\%", height = "400px")
+faqOutput(outputId, width = "100\%", height = "100\%")
 
 renderFaq(expr, env = parent.frame(), quoted = FALSE)
 }
 \arguments{
 \item{outputId}{output variable to read from}
 
-\item{width, height}{Must be a valid CSS unit (like \code{'100\%'},
-\code{'400px'}, \code{'auto'}) or a number, which will be coerced to a
-string and have \code{'px'} appended.}
+\item{width}{width of the widget}
+
+\item{height}{height of the widget}
 
 \item{expr}{An expression that generates a faq}
 
