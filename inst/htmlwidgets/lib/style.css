@@ -1,23 +1,29 @@
+.faq-package{
+  padding:20px;
+}
+
+
 .faqcollapsible {
   background-color: #F0F0F0;
   color: black;
   cursor: pointer;
-  padding: 38px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   width: 100%;
   border: 0;
   font-weight: bold;
   text-align: left;
   outline: none;
   font-size: 15px;
-  padding-left: 80px;
+  padding-left: 70px;
 }
 
 
-.active, .faqcollapsible:hover {
+.faq-package .active, .faqcollapsible:hover {
   background-color: #E8E8E8;
 }
 
-.wrapper{
+.faqwrapper{
   border-bottom: 2px solid #FFF;
 }
 
@@ -29,12 +35,12 @@
   font-weight: bold;
   position: relative;
   float:left;
-  margin-left: -50px;
+  margin-left: -40px;
   margin-right: 5px;
   margin-top: -8px;
 }
 
-.active:after {
+.faq-package .active:after {
   content: "\2212";
 }
 
@@ -44,5 +50,17 @@
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
-  background-color: #f0f0f0;
+  background-color: white;
+}
+
+.faq-expand-all{
+  padding: 5px;
+  margin-bottom: 10px;
+  border: none;
+  font-size: 15px;
+  background-color:#F0F0F0;
+}
+
+.faq-package .active, .faq-expand-all:hover {
+  background-color: #E8E8E8;
 }

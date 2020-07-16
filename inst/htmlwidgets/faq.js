@@ -25,15 +25,42 @@ function faq(el, x){
   var jsonData = x.data
 
 var faq = document.getElementById(el.id);
-var faqtitle = document.createElement("H1");
+faq.classList.add("faq-package");
+
+var faqtitle = document.createElement("H2");
 var titletext = document.createTextNode(x.faqtitle);
 faqtitle.appendChild(titletext);
 faq.appendChild(faqtitle);
 
+ let faqallexpand = document.createElement("button");
+    faqallexpand.classList.add("faq-expand-all");
+    faqallexpand.innerHTML = "+ Expand All";
+
+    var allcontent = document.getElementsByClassName("faqcontent");
+    var allcollapsible = document.getElementsByClassName("faqcollapsible");
+    faqallexpand.addEventListener("click", function() {
+      if (faqallexpand.innerHTML === "+ Expand All") {
+              faqallexpand.innerHTML = "- Collapse All";
+            } else {
+             faqallexpand.innerHTML = "+ Expand All";
+            }
+    for (i = 0; i < allcontent.length; i++) {
+      if (faqallexpand.innerHTML === "+ Expand All"){
+        allcontent[i].style.maxHeight = null;
+        allcollapsible[i].classList.remove("active");
+      } else {
+        allcontent[i].style.maxHeight = allcontent[i].scrollHeight + "px";
+        allcollapsible[i].classList.add("active");
+      }
+    }
+  });
+
+faq.appendChild(faqallexpand);
+
 for (var i = 0; i < jsonData.answer.length; i++) {
 
    let wrapperdiv = document.createElement("div");
-       wrapperdiv.classList.add("wrapper");
+       wrapperdiv.classList.add("faqwrapper");
    let contentdiv = document.createElement("div");
     contentdiv.classList.add("faqcontent");
    let ptag = document.createElement("p");

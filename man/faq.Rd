@@ -9,7 +9,7 @@ faq(
   width = NULL,
   height = NULL,
   elementId = NULL,
-  title = "Frequently Asked Questions"
+  faqtitle = "Frequently Asked Questions"
 )
 }
 \arguments{
@@ -21,8 +21,18 @@ faq(
 
 \item{elementId}{ellement ID of this widget}
 
-\item{title}{title for this widgets}
+\item{faqtitle}{title for this widgets}
 }
 \description{
 Create FAQ page
+}
+\examples{
+df <- data.frame(
+question = c("Question1", "Question2", "Question3"),
+answer = c("answer for question1",
+           "question2 answer",
+           "answer3")
+)
+faq::faq(data = df, elementId = "faq", faqtitle = "Frequently Asked Questions")
+
 }
