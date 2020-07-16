@@ -14,6 +14,9 @@ Authors@R:
     person(given = "Alex",
            family = "Lais",
            role = "ctb"),
+    person(given = "Jason",
+           family = "Forrest",
+           role = "ctb"),
     person(given = "Gunvansh",
            family = "Khanna",
            role = "ctb"))
@@ -22,7 +25,7 @@ Suggests: knitr, rmarkdown
 VignetteBuilder: knitr
 License: MIT + file LICENSE
 Imports:
-    htmlwidgets
+    htmlwidgets, jsonlite
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.0.2

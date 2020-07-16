@@ -24,7 +24,12 @@ faq <- function(data, width = NULL, height = NULL, elementId = NULL,
 
   # forward options using x
   x = list(
-    data = htmlwidgets:::toJSON(data),
+    data = jsonlite::toJSON(
+      data, dataframe = "columns", null = "null", na = "null", auto_unbox = TRUE,
+      use_signif = TRUE, force = TRUE,
+      POSIXt = "ISO8601", UTC = TRUE, rownames = FALSE, keep_vec_names = TRUE,
+      json_verbatim = TRUE
+    ),
     faqtitle = faqtitle
   )
 
