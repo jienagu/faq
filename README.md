@@ -33,4 +33,4 @@ df <- data.frame(
 faq::faq(data = df, elementId = "faq", faqtitle = "Frequently Asked Questions")
 ```
 
-
+![demo_gif](faq_gif.gif)
