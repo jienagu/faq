@@ -12,8 +12,14 @@ Shiny application with desired data.frame.
 
 ## Installation
 
+On its way to CRAN
 ``` r
-install.packages("faq")
+# install.packages("faq")
+```
+Dev version
+
+``` r
+# install.packages("faq")
 ```
 
 ## Introduction
