@@ -19,7 +19,7 @@ On its way to CRAN
 Dev version
 
 ``` r
-# install.packages("faq")
+devtools::install_github("jienagu/noteMD")
 ```
 
 ## Introduction
