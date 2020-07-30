@@ -12,9 +12,9 @@ Shiny application with desired data.frame.
 
 ## Installation
 
-On its way to CRAN
+from CRAN
 ``` r
-# install.packages("faq")
+install.packages("faq")
 ```
 Dev version
 
