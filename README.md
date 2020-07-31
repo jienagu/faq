@@ -19,7 +19,7 @@ install.packages("faq")
 Dev version
 
 ``` r
-devtools::install_github("jienagu/noteMD")
+devtools::install_github("jienagu/faq")
 ```
 
 ## Introduction
