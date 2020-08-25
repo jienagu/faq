@@ -7,6 +7,8 @@
 #' @param height height of this widget
 #' @param elementId ellement ID of this widget
 #' @param faqtitle title for this widgets
+#' @param expand_all_button_text text on expand all button
+#' @param collapse_all_button_text text on collapse all button
 #'
 #' @import htmlwidgets
 #' @examples
@@ -20,7 +22,9 @@
 #'
 #' @export
 faq <- function(data, width = NULL, height = NULL, elementId = NULL,
-                faqtitle = "Frequently Asked Questions") {
+                faqtitle = "Frequently Asked Questions",
+                expand_all_button_text = "+ Expand All",
+                collapse_all_button_text = "- Collapse All") {
 
   # forward options using x
   x = list(
@@ -30,7 +34,9 @@ faq <- function(data, width = NULL, height = NULL, elementId = NULL,
       POSIXt = "ISO8601", UTC = TRUE, rownames = FALSE, keep_vec_names = TRUE,
       json_verbatim = TRUE
     ),
-    faqtitle = faqtitle
+    faqtitle = faqtitle,
+    expand_all_button_text = expand_all_button_text,
+    collapse_all_button_text = collapse_all_button_text
   )
 
   # create widget

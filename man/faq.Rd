@@ -9,7 +9,9 @@ faq(
   width = NULL,
   height = NULL,
   elementId = NULL,
-  faqtitle = "Frequently Asked Questions"
+  faqtitle = "Frequently Asked Questions",
+  expand_all_button_text = "+ Expand All",
+  collapse_all_button_text = "- Collapse All"
 )
 }
 \arguments{
@@ -22,6 +24,10 @@ faq(
 \item{elementId}{ellement ID of this widget}
 
 \item{faqtitle}{title for this widgets}
+
+\item{expand_all_button_text}{text on expand all button}
+
+\item{collapse_all_button_text}{text on collapse all button}
 }
 \description{
 Create FAQ page
