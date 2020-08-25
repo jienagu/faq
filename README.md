@@ -42,3 +42,20 @@ faq::faq(data = df, elementId = "faq", faqtitle = "Frequently Asked Questions")
 ```
 
 ![demo_gif](faq_gif.gif)
+
+## Update Announcement
+Considering this package supports multiple languages, now user can define the text on Expand All/Collapse All button on Dev version. See here is an example:
+
+```
+devtools::install_github("jienagu/faq")
+library(faq)
+df <- data.frame(
+  question = c("Question1", "Question2", "Question3"),
+  answer = c("answer for question1", 
+             "question2 answer", 
+             "answer3")
+)
+faq::faq(data = df, elementId = "faq", faqtitle = "Frequently Asked Questions",
+         expand_all_button_text = "+ montrer tout", 
+         collapse_all_button_text = "- cacher tout")
+```
