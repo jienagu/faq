@@ -12,6 +12,8 @@
 This is package is to create a FAQ (Frequently Asked Questions) page for
 Shiny application with desired data.frame.
 
+Live podcast tutorial on 25:33 : https://shinydevseries.com/post/episode-16-jmclellan/
+
 ## Installation
 
 from CRAN
