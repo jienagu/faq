@@ -80,6 +80,7 @@ for (var i = 0; i < jsonData.answer.length; i++) {
       faqcontent.style.maxHeight = faqcontent.scrollHeight + "px";
     }
   });
+  contentdiv.style.background = x.content_background_color;
   wrapperdiv.appendChild(questiondiv);
   wrapperdiv.appendChild(contentdiv);
   faq.appendChild(wrapperdiv);
