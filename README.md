@@ -67,3 +67,17 @@ faq::faq(data = df, elementId = "faq", faqtitle = "Frequently Asked Questions",
          collapse_all_button_text = "- cacher tout",
          content_background_color = "#f0f0f0")
 ```
+All questions and answers are rendered as `innerHTML()` so we can embed any html tag or images. See example
+```
+df <- data.frame(
+  question = c("Question1", "Question2", "Question3"),
+  answer = c("Répondre <b>key word</b>", 
+             "Répondre 2 <img src=\"https://media.giphy.com/media/oF5oUYTOhvFnO/giphy.gif\">", 
+             "Répondre 3")
+)
+faq::faq(data = df, elementId = "faq", faqtitle = "Questions fréquemment posées",
+         expand_all_button_text = "+ montrer tout", 
+         collapse_all_button_text = "- cacher tout",
+         content_background_color = "white")
+
+```
