@@ -11,7 +11,8 @@ faq(
   elementId = NULL,
   faqtitle = "Frequently Asked Questions",
   expand_all_button_text = "+ Expand All",
-  collapse_all_button_text = "- Collapse All"
+  collapse_all_button_text = "- Collapse All",
+  content_background_color = "white"
 )
 }
 \arguments{
@@ -28,6 +29,8 @@ faq(
 \item{expand_all_button_text}{text on expand all button}
 
 \item{collapse_all_button_text}{text on collapse all button}
+
+\item{content_background_color}{background color for answers}
 }
 \description{
 Create FAQ page

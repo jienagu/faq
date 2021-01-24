@@ -9,6 +9,7 @@
 #' @param faqtitle title for this widgets
 #' @param expand_all_button_text text on expand all button
 #' @param collapse_all_button_text text on collapse all button
+#' @param content_background_color background color for answers
 #'
 #' @import htmlwidgets
 #' @examples
@@ -24,7 +25,8 @@
 faq <- function(data, width = NULL, height = NULL, elementId = NULL,
                 faqtitle = "Frequently Asked Questions",
                 expand_all_button_text = "+ Expand All",
-                collapse_all_button_text = "- Collapse All") {
+                collapse_all_button_text = "- Collapse All",
+                content_background_color = "white") {
 
   # forward options using x
   x = list(
@@ -36,7 +38,8 @@ faq <- function(data, width = NULL, height = NULL, elementId = NULL,
     ),
     faqtitle = faqtitle,
     expand_all_button_text = expand_all_button_text,
-    collapse_all_button_text = collapse_all_button_text
+    collapse_all_button_text = collapse_all_button_text,
+    content_background_color = content_background_color
   )
 
   # create widget
