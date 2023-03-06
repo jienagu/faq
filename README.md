@@ -67,7 +67,7 @@ faq::faq(data = df, elementId = "faq", faqtitle = "Frequently Asked Questions",
          collapse_all_button_text = "- cacher tout",
          content_background_color = "#f0f0f0")
 ```
-All questions and answers are rendered as `innerHTML()` so we can embed any html tag or images. See example
+All questions and answers are rendered as `innerHTML()` so we can embed any html tag including images. See example
 ```
 df <- data.frame(
   question = c("Question1", "Question2", "Question3"),
@@ -80,4 +80,15 @@ faq::faq(data = df, elementId = "faq", faqtitle = "Questions fréquemment posée
          collapse_all_button_text = "- cacher tout",
          content_background_color = "white")
 
+```
+Inserting an image in answer:
+```
+library(faq)
+df <- data.frame(
+  question = c("Question1", "Question2", "Question3"),
+  answer = c("Répondre <b>key word</b>",
+             "Répondre 2 <img src=\"https://raw.githubusercontent.com/jienagu/faq/master/faq_logo.png\">",
+             "Répondre 3")
+)
+faq::faq(data = df, elementId = "faq", faqtitle = "FAQ")
 ```
